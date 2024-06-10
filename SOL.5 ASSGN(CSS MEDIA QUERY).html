@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOLUTION 5</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .item2,.item3{
+            background-color: #ddd;
+            padding: 20px;
+            text-align: center;
+        }
+        .item2{
+            background-color: #66cc99;
+            color: white;
+        }
+        .item3{
+            background-color: #ff9933;
+            color: white;
+        }
+        .item1,.item4{
+            background-color: #333;
+            color:white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+        }
+        .sub-container{
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+        @media screen and (min-width: 768px) {
+            .container {
+            flex-direction: row;
+            }
+            .item2,
+            .item3{
+            flex: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">Box1</div>
+        <div class="sub-container">
+            <div class="item2">Box2</div>
+            <div class="item3">Box3</div>
+        </div>
+        <div class="item4">Box4</div>
+    </div>
+</body>
+</html>
